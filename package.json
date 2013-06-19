@@ -1,6 +1,6 @@
 {
   "name": "lua-savestate",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "description": "Persist some keys and values",
   "main": "init.lua",
   "scripts": {
