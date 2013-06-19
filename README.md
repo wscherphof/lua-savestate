@@ -38,6 +38,30 @@ savestate:init(nil, {
 ```
 If you have a custom implementation in a separate lua file, you can pass the module load string for it, eg: `savestate:init(nil, "coronasdk")` (which happens to be equivalent to `savestate:init()`)
 
+## 4. Read & write
+To read a value:
+```lua
+savestate:get("foo")
+```
+To create or update a value:
+```lua
+savestate:set("foo", "foobar")
+```
+To save all values:
+```lua
+savestate:persist()
+```
+To get all values saved when setting a value:
+```lua
+savestate:set("foo", "foobar", true)
+```
+To get all known values:
+```lua
+for _,key in savestate:keys() do
+  print(key, savestate:get(key))
+end
+```
+
 # Limitations
 
 - Currently only file-based persistence. API must break to support others.
