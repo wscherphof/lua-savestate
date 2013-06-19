@@ -1,0 +1,29 @@
+{
+  "name": "lua-savestate",
+  "version": "0.0.1",
+  "description": "Persist some keys and values",
+  "main": "init.lua",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wscherphof/lua-savestate.git"
+  },
+  "keywords": [
+    "lua",
+    "lua-loader",
+    "persist",
+    "persistance",
+    "state",
+    "application",
+    "corona"
+  ],
+  "author": "Wouter Scherphof",
+  "license": "LGPL",
+  "readmeFilename": "README.md",
+  "gitHead": "01670be3a9278835447affead73c0932a3863d81",
+  "bugs": {
+    "url": "https://github.com/wscherphof/lua-savestate/issues"
+  }
+}
