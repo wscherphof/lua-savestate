@@ -2,17 +2,17 @@
 
 Persist some keys and values
 
-# Usage
+## Usage
 
-## 1. Install
+### 1. Install
 Setup [lua-loader](https://github.com/wscherphof/lua-loader) and then just `npm install lua-savestate`
 
-## 2. Require
+### 2. Require
 ```lua
 local savestate = require("lua-savestate")
 ```
 
-## 3. Init
+### 3. Init
 Comes with one packaged implementation, for the [Corona SDK](http://www.coronalabs.com/products/corona-sdk/), which is also the default, but you still have to initialise it:
 ```lua
 savestate:init()
@@ -38,7 +38,7 @@ savestate:init(nil, {
 ```
 If you have a custom implementation in a separate lua file, you can pass the module load string for it, eg: `savestate:init(nil, "coronasdk")` (which happens to be equivalent to `savestate:init()`)
 
-## 4. Read & write
+### 4. Read & write
 To read a value:
 ```lua
 savestate:get("foo")
@@ -62,8 +62,7 @@ for _,key in savestate:keys() do
 end
 ```
 
-# Limitations
-
+## Limitations
 - Currently only file-based persistence. API must break to support others.
 
 ## License
